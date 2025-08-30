@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flexilecms.com/sitemap.xml
+Sitemap: https://flexilecms.com/sitemap_index.xml
