@@ -3,14 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>FlexileCMS — Launch SEO-ready sites that are fast by default</title>
-  <meta name="description" content="FlexileCMS is a lightweight, SEO-first CMS. Ship blazing-fast websites with clean HTML, structured data, and Core Web Vitals that stay green."/>
+  <title>FlexileCMS — Launch SEO‑ready sites that are fast by default</title>
+  <meta name="description" content="FlexileCMS is a lightweight, SEO‑first CMS. Ship blazing‑fast websites with clean HTML, structured data, and Core Web Vitals that stay green."/>
   <link rel="canonical" href="https://flexilecms.com/"/>
   <link rel="icon" href="/assets/favicon.png" type="image/png"/>
-
-  <!-- OG -->
-  <meta property="og:title" content="FlexileCMS — Launch SEO-ready sites that are fast by default"/>
-  <meta property="og:description" content="Lightweight CMS with clean HTML, JSON-LD, auto sitemaps, and Core Web Vitals wins."/>
+  <meta property="og:title" content="FlexileCMS — Launch SEO‑ready sites that are fast by default"/>
+  <meta property="og:description" content="Lightweight CMS with clean HTML, JSON‑LD, auto sitemaps, and Core Web Vitals wins."/>
   <meta property="og:url" content="https://flexilecms.com/"/>
   <meta property="og:type" content="website"/>
 
@@ -22,7 +20,10 @@
   <!-- End Google Tag Manager -->
 
   <style>
-    :root{--bg:#0b1220; --card:#0f172a; --fg:#e5f0ff; --muted:#90a4c3; --line:#1f2a44; --brand:#22c55e; --brand-2:#38bdf8; --shadow:0 10px 30px rgba(0,0,0,.35)}
+    :root{
+      --bg:#0b1220; --card:#0f172a; --fg:#e5f0ff; --muted:#90a4c3; --line:#1f2a44;
+      --brand:#22c55e; --brand-2:#38bdf8; --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
     *{box-sizing:border-box} html,body{margin:0}
     body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#0b1220 60%,#0d1526);color:var(--fg);line-height:1.6}
     a{color:var(--brand-2);text-decoration:none} a:hover{text-decoration:underline}
@@ -39,26 +40,40 @@
     h1{font-size:clamp(1.8rem,3.8vw,3rem);line-height:1.15;margin:.4rem 0}
     .hero p.lead{color:var(--muted);max-width:66ch;margin:.5rem 0 1rem}
     .pill{display:inline-block;padding:.35rem .6rem;border:1px solid #2b3857;border-radius:999px;color:#b5c7ea;letter-spacing:.2px;font-size:.88rem}
+
     .grid{display:grid;gap:1.2rem} .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
     .card{background:linear-gradient(180deg,#101a2f,#0f172a);border:1px solid var(--line);border-radius:16px;padding:1.1rem;box-shadow:var(--shadow)}
     .muted{color:var(--muted)}
+
     .logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;opacity:.9}
     .logo{background:#0c1528;border:1px solid #1c2845;border-radius:12px;padding:.8rem;text-align:center;color:#9fb2d6}
+
     .steps{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
     .step-num{width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg,var(--brand-2),var(--brand));display:grid;place-items:center;font-weight:700;color:#041018;margin-bottom:.5rem}
+
     table.compare{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0e172b}
     table.compare th,table.compare td{padding:.85rem;border-bottom:1px solid var(--line);text-align:left}
     table.compare tr:last-child td{border-bottom:none}
     table.compare th{background:#0c1426;color:#cfe2ff}
     .yes{color:#22c55e;font-weight:700} .no{color:#ef4444;font-weight:700}
+
     details{background:#0e172b;border:1px solid var(--line);border-radius:12px;padding:.8rem}
     details+details{margin-top:.6rem} summary{cursor:pointer;font-weight:600}
+
     footer{background:#0a0f1c;border-top:1px solid var(--line);margin-top:2rem}
-    section{scroll-margin-top:90px}
   </style>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"FlexileCMS","applicationCategory":"BusinessApplication","operatingSystem":"Any","url":"https://flexilecms.com","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Lightweight CMS focused on speed and SEO with clean HTML and JSON-LD."}
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"FlexileCMS",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Any",
+    "url":"https://flexilecms.com",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "description":"Lightweight CMS focused on speed and SEO with clean HTML and JSON‑LD."
+  }
   </script>
 </head>
 <body>
@@ -68,150 +83,114 @@
   <header role="banner">
     <div class="container nav">
       <div class="brand">
-        <span class="brand-badge">⚡</span><span>FlexileCMS</span>
+        <span class="brand-badge">⚡</span>
+        <span>FlexileCMS</span>
       </div>
       <nav aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#docs">Docs</a>
-        <a href="#blog">Blog</a>
-        <a class="btn ghost" href="#contact">Contact</a>
+        <a href="/">Home</a>
+        <a href="/features">Features</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/docs">Docs</a>
+        <a href="/blog">Blog</a>
+        <a class="btn ghost" href="/contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HOME -->
-  <section id="home" class="hero">
+  <section class="hero">
     <div class="container">
-      <span class="pill">SEO-first • Core Web Vitals • Headless-friendly</span>
-      <h1>Launch SEO-ready websites that stay <em>fast</em> — without wrestling a theme.</h1>
-      <p class="lead">FlexileCMS ships clean HTML, JSON-LD, auto-generated sitemaps, and a content model that maps to any frontend. No bloat, no lock-in. Just content that flies.</p>
+      <span class="pill">SEO‑first • Core Web Vitals • Headless‑friendly</span>
+      <h1>Launch SEO‑ready websites that stay <em>fast</em> — without wrestling a theme.</h1>
+      <p class="lead">FlexileCMS ships clean HTML, JSON‑LD, auto‑generated sitemaps, and a content model that maps to any frontend. No bloat, no lock‑in. Just content that flies.</p>
       <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem">
-        <a class="btn primary" href="#docs">Get started — it’s free</a>
-        <a class="btn" href="#demo">See a live demo</a>
+        <a class="btn primary" href="/docs/get-started">Get started — it’s free</a>
+        <a class="btn" href="/demo">See a live demo</a>
       </div>
     </div>
   </section>
 
-  <!-- LOGOS -->
   <section>
     <div class="container">
       <p class="muted" style="margin:.2rem 0 1rem">Trusted building blocks used across startups & agencies</p>
       <div class="logos">
-        <div class="logo">Acme Studio</div><div class="logo">Northwind</div>
-        <div class="logo">PixelPilot</div><div class="logo">Horizon Labs</div>
+        <div class="logo">Acme Studio</div>
+        <div class="logo">Northwind</div>
+        <div class="logo">PixelPilot</div>
+        <div class="logo">Horizon Labs</div>
         <div class="logo">Lighthouse</div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section id="features">
+  <section>
     <div class="container">
       <h2>Built for performance & rankings</h2>
       <div class="grid cards">
-        <article class="card"><h3>Clean, semantic output</h3><p class="muted">Minimal markup for better crawlability and accessibility. No render-blocking bloat.</p></article>
-        <article class="card"><h3>Structured by default</h3><p class="muted">Open Graph, canonical tags, and JSON-LD baked in. Sitemaps & robots auto-generated.</p></article>
-        <article class="card"><h3>Core Web Vitals wins</h3><p class="muted">LCP/CLS/INP-friendly defaults: critical CSS, image hints, lazy load, and preconnect.</p></article>
+        <article class="card"><h3>Clean, semantic output</h3><p class="muted">Minimal markup for better crawlability and accessibility. No render‑blocking bloat.</p></article>
+        <article class="card"><h3>Structured by default</h3><p class="muted">Open Graph, canonical tags, and JSON‑LD baked in. Sitemaps & robots auto‑generated.</p></article>
+        <article class="card"><h3>Core Web Vitals wins</h3><p class="muted">LCP/CLS/INP‑friendly defaults: critical CSS, image hints, lazy load, and preconnect.</p></article>
         <article class="card"><h3>Flexible content</h3><p class="muted">Types & fields that map to any stack — CSR/SSR/SSG. Markdown or rich text.</p></article>
       </div>
     </div>
   </section>
 
-  <!-- DOCS -->
-  <section id="docs">
-    <div class="container">
-      <h2>Docs</h2>
-      <div class="card"><p class="muted">Quick start: Create a type, add fields, publish, and deploy. Clean output and JSON-LD are on by default.</p>
-      <p><a class="btn" href="#contact">Need help? Contact us</a></p></div>
-    </div>
-  </section>
-
-  <!-- PRICING -->
-  <section id="pricing">
-    <div class="container">
-      <h2>Pricing</h2>
-      <div class="grid cards">
-        <article class="card"><h3>Starter</h3><p class="muted">$0 / mo</p><ul><li>3 content types</li><li>Static export</li><li>Basic auth</li></ul></article>
-        <article class="card"><h3>Pro</h3><p class="muted">$19 / mo</p><ul><li>Unlimited types</li><li>API & webhooks</li><li>Backups</li></ul></article>
-        <article class="card"><h3>Enterprise</h3><p class="muted">Custom</p><ul><li>SSO & SLA</li><li>Regions</li><li>Support</li></ul></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
   <section>
     <div class="container">
       <h2>How it works</h2>
       <div class="grid steps">
         <div class="card"><div class="step-num">1</div><h3>Create</h3><p class="muted">Define content types (Post, Page, Product) and fields in minutes.</p></div>
         <div class="card"><div class="step-num">2</div><h3>Publish</h3><p class="muted">Editors write with live preview, drafts, and scheduled publishing.</p></div>
-        <div class="card"><div class="step-num">3</div><h3>Ship</h3><p class="muted">Export static or serve dynamically. Deploy anywhere.</p></div>
+        <div class="card"><div class="step-num">3</div><h3>Ship</h3><p class="muted">Export static or serve dynamically. Deploy to GitHub Pages, Netlify, Vercel…</p></div>
       </div>
     </div>
   </section>
 
-  <!-- BLOG -->
-  <section id="blog">
+  <section>
     <div class="container">
-      <h2>Blog</h2>
-      <div class="grid cards">
-        <article class="card"><h3>Introducing FlexileCMS</h3><p class="muted">Why we built a CMS that stays out of your way.</p></article>
-        <article class="card"><h3>Core Web Vitals with FlexileCMS</h3><p class="muted">Defaults that help you stay green.</p></article>
-      </div>
+      <h2>Why teams switch to FlexileCMS</h2>
+      <table class="compare" aria-describedby="compare-desc">
+        <caption id="compare-desc" class="muted" style="text-align:left;padding:.6rem">A quick glance at what you get out of the box.</caption>
+        <thead><tr><th>Capability</th><th>FlexileCMS</th><th>Typical theme stack</th></tr></thead>
+        <tbody>
+          <tr><td>Core Web Vitals</td><td class="yes">Optimized by default</td><td class="no">Requires heavy tuning</td></tr>
+          <tr><td>Structured data</td><td class="yes">Built‑in JSON‑LD</td><td class="no">Plugins required</td></tr>
+          <tr><td>Security</td><td class="yes">Static export option</td><td class="no">Dynamic surface area</td></tr>
+          <tr><td>Portability</td><td class="yes">Headless‑friendly</td><td class="no">Vendor lock‑in</td></tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
   <section>
     <div class="container">
       <h2>What people say</h2>
       <div class="grid cards">
-        <blockquote class="card" cite="#"><p>“We replaced a bulky stack and cut our LCP from 3.2s to 1.2s.”</p><p class="muted">— Mira</p></blockquote>
-        <blockquote class="card" cite="#"><p>“Editors love the simplicity. Devs love the clean output.”</p><p class="muted">— Dan</p></blockquote>
-        <blockquote class="card" cite="#"><p>“Setup to first deploy in an afternoon.”</p><p class="muted">— Keita</p></blockquote>
+        <blockquote class="card" cite="#"><p>“We replaced a bulky stack and cut our LCP from 3.2s to 1.2s. Rankings followed.”</p><p class="muted">— Mira, Growth Lead</p></blockquote>
+        <blockquote class="card" cite="#"><p>“Editors love the simplicity. Devs love the clean output. Perfect balance.”</p><p class="muted">— Dan, CTO</p></blockquote>
+        <blockquote class="card" cite="#"><p>“Setup to first deploy in an afternoon. Our lighthouse score finally stayed green.”</p><p class="muted">— Keita, Freelancer</p></blockquote>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="demo">
+  <section>
     <div class="container">
       <div class="card" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
         <div><h2 style="margin:.2rem 0">Ready to ship faster?</h2>
-        <p class="muted" style="margin:0">Start with best-practice defaults and keep control of your stack.</p></div>
+        <p class="muted" style="margin:0">Start with best‑practice defaults and keep control of your stack.</p></div>
         <div>
-          <a class="btn primary" href="#docs">Start now</a>
-          <a class="btn" href="#contact">Talk to sales</a>
+          <a class="btn primary" href="/docs/get-started">Start now</a>
+          <a class="btn" href="/contact">Talk to sales</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
   <section>
     <div class="container">
       <h2>FAQ</h2>
-      <details><summary>Is it really SEO-first?</summary><p class="muted">Yes — clean HTML, canonical tags, OG, JSON-LD, robots, sitemaps, and internal linking patterns come standard.</p></details>
+      <details><summary>Is it really SEO‑first?</summary><p class="muted">Yes — clean HTML, canonical tags, OG, JSON‑LD, robots, sitemaps, and internal linking patterns come standard.</p></details>
       <details><summary>Static or dynamic?</summary><p class="muted">Both. Export static for max speed and security, or run server mode when you need it.</p></details>
-      <details><summary>Can we use our existing frontend?</summary><p class="muted">Absolutely. Works with React, Next.js, Astro, vanilla, and more.</p></details>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="card">
-        <p class="muted">Send us a note — we’ll get back within 1 business day.</p>
-        <form name="contact" method="post">
-          <p><label>Name<br><input name="name" required></label></p>
-          <p><label>Email<br><input name="email" type="email" required></label></p>
-          <p><label>Message<br><textarea name="message" rows="6" required></textarea></label></p>
-          <p><button class="btn primary" type="submit">Send</button></p>
-        </form>
-      </div>
+      <details><summary>Can we use our existing frontend?</summary><p class="muted">Absolutely. FlexileCMS is headless‑friendly and works with React, Next.js, Astro, vanilla, and more.</p></details>
     </div>
   </section>
 
@@ -219,11 +198,12 @@
     <div class="container" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
       <small>© <span id="y"></span> FlexileCMS — All rights reserved.</small>
       <nav aria-label="Footer">
-        <a href="#features">Features</a> ·
-        <a href="#pricing">Pricing</a> ·
-        <a href="#docs">Docs</a> ·
-        <a href="#blog">Blog</a> ·
-        <a href="#contact">Contact</a>
+        <a href="/features">Features</a> ·
+        <a href="/pricing">Pricing</a> ·
+        <a href="/docs">Docs</a> ·
+        <a href="/blog">Blog</a> ·
+        <a href="/contact">Contact</a> ·
+        <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
