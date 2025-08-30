@@ -3,199 +3,194 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>FlexileCMS — The fast, SEO‑ready, lightweight CMS</title>
-  <meta name="description" content="FlexileCMS is a fast, lightweight CMS for modern sites. SEO‑ready, secure, and easy to ship. Launch blazing‑fast websites with clean markup and structured data."/>
+  <title>FlexileCMS — Launch SEO‑ready sites that are fast by default</title>
+  <meta name="description" content="FlexileCMS is a lightweight, SEO‑first CMS. Ship blazing‑fast websites with clean HTML, structured data, and Core Web Vitals that stay green."/>
   <link rel="canonical" href="https://flexilecms.com/"/>
   <link rel="icon" href="/assets/favicon.png" type="image/png"/>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="FlexileCMS — The fast, SEO‑ready, lightweight CMS"/>
-  <meta property="og:description" content="Build blazing‑fast, SEO‑ready websites. Clean structure, great Core Web Vitals, and no bloat."/>
+  <meta property="og:title" content="FlexileCMS — Launch SEO‑ready sites that are fast by default"/>
+  <meta property="og:description" content="Lightweight CMS with clean HTML, JSON‑LD, auto sitemaps, and Core Web Vitals wins."/>
   <meta property="og:url" content="https://flexilecms.com/"/>
   <meta property="og:type" content="website"/>
 
-  <!-- Google Tag Manager (replace GTM-XXXXXXX with your container ID) -->
-  <script>
-  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-  j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-XXXXXXX');
-  </script>
-  <!-- End GTM -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MQLPR8WC');</script>
+  <!-- End Google Tag Manager -->
 
   <style>
     :root{
-      --fg:#0f172a; --muted:#64748b; --bg:#f8fafc; --card:#fff; --line:#e5e7eb; --accent:#0ea5e9;
+      --bg:#0b1220; --card:#0f172a; --fg:#e5f0ff; --muted:#90a4c3; --line:#1f2a44;
+      --brand:#22c55e; --brand-2:#38bdf8; --shadow:0 10px 30px rgba(0,0,0,.35);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0}
-    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
-    .container{max-width:1140px;margin:auto;padding:1rem}
-    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line);z-index:10}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0;gap:.75rem}
-    .brand{font-weight:900;letter-spacing:.2px}
-    nav a{color:var(--fg);font-weight:600;margin-left:.9rem}
-    .btn{display:inline-block;background:var(--fg);color:#fff;padding:.75rem 1rem;border-radius:12px;border:1px solid #0001}
-    .btn.outline{background:#fff;color:var(--fg);border:1px solid var(--line)}
-    .hero{background:linear-gradient(180deg,#e0f2fe 0,transparent 65%);padding:3.2rem 0}
-    .hero h1{font-size:clamp(1.7rem,3.5vw,2.6rem);line-height:1.12;margin:.3rem 0}
-    .hero p{color:var(--muted);max-width:65ch}
-    .hero-cta{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
-    .grid{display:grid;gap:1rem}
-    .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem}
+    *{box-sizing:border-box} html,body{margin:0}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#0b1220,#0b1220 60%,#0d1526);color:var(--fg);line-height:1.6}
+    a{color:var(--brand-2);text-decoration:none} a:hover{text-decoration:underline}
+    .container{max-width:1200px;margin:auto;padding:1.2rem}
+    header{position:sticky;top:0;background:#0b1220e6;backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line);z-index:20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.6rem 0}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.2px}
+    .brand-badge{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:var(--shadow)}
+    nav a{color:var(--fg);font-weight:600;margin-left:.9rem;opacity:.9} nav a:hover{opacity:1}
+    .btn{display:inline-block;border-radius:14px;padding:.8rem 1rem;border:1px solid #3b4a6b}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),#16a34a);color:#041018;border:none;box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent;color:var(--fg)}
+    .hero{padding:4rem 0;background:radial-gradient(800px 400px at 20% -10%,#123,#0b1220 60%), radial-gradient(900px 500px at 100% 0%,#0b2038,transparent 60%);}
+    h1{font-size:clamp(1.8rem,3.8vw,3rem);line-height:1.15;margin:.4rem 0}
+    .hero p.lead{color:var(--muted);max-width:66ch;margin:.5rem 0 1rem}
+    .pill{display:inline-block;padding:.35rem .6rem;border:1px solid #2b3857;border-radius:999px;color:#b5c7ea;letter-spacing:.2px;font-size:.88rem}
+
+    .grid{display:grid;gap:1.2rem} .cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:linear-gradient(180deg,#101a2f,#0f172a);border:1px solid var(--line);border-radius:16px;padding:1.1rem;box-shadow:var(--shadow)}
     .muted{color:var(--muted)}
-    .section{padding:2.2rem 0}
-    .list{list-style:none;margin:0;padding:0}
-    .list li{padding-left:1.1rem;position:relative;margin:.25rem 0}
-    .list li::before{content:"•";position:absolute;left:.2rem;color:var(--accent)}
-    .cta{background:#0f172a;color:#fff;border-radius:16px;padding:1.5rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
-    footer{background:#0f172a;color:#cbd5e1;padding:2rem 0;margin-top:2rem}
-    footer a{color:#cbd5e1}
+
+    .logos{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:1rem;opacity:.9}
+    .logo{background:#0c1528;border:1px solid #1c2845;border-radius:12px;padding:.8rem;text-align:center;color:#9fb2d6}
+
+    .steps{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .step-num{width:36px;height:36px;border-radius:999px;background:linear-gradient(135deg,var(--brand-2),var(--brand));display:grid;place-items:center;font-weight:700;color:#041018;margin-bottom:.5rem}
+
+    table.compare{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0e172b}
+    table.compare th,table.compare td{padding:.85rem;border-bottom:1px solid var(--line);text-align:left}
+    table.compare tr:last-child td{border-bottom:none}
+    table.compare th{background:#0c1426;color:#cfe2ff}
+    .yes{color:#22c55e;font-weight:700} .no{color:#ef4444;font-weight:700}
+
+    details{background:#0e172b;border:1px solid var(--line);border-radius:12px;padding:.8rem}
+    details+details{margin-top:.6rem} summary{cursor:pointer;font-weight:600}
+
+    footer{background:#0a0f1c;border-top:1px solid var(--line);margin-top:2rem}
   </style>
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Organization",
+    "@type":"SoftwareApplication",
     "name":"FlexileCMS",
+    "applicationCategory":"BusinessApplication",
+    "operatingSystem":"Any",
     "url":"https://flexilecms.com",
-    "logo":"https://flexilecms.com/assets/favicon.png"
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "description":"Lightweight CMS focused on speed and SEO with clean HTML and JSON‑LD."
   }
   </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End GTM (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQLPR8WC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <header role="banner">
     <div class="container nav">
-      <div class="brand">⚡ FlexileCMS</div>
-      <nav aria-label="Main">
+      <div class="brand">
+        <span class="brand-badge">⚡</span>
+        <span>FlexileCMS</span>
+      </div>
+      <nav aria-label="Main navigation">
         <a href="/">Home</a>
         <a href="/features">Features</a>
         <a href="/pricing">Pricing</a>
         <a href="/docs">Docs</a>
         <a href="/blog">Blog</a>
-        <a href="/contact" class="btn outline">Contact</a>
+        <a class="btn ghost" href="/contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <p class="muted" style="margin:0">Fast • Secure • SEO‑ready • Headless‑friendly</p>
-      <h1>Launch blazing‑fast, SEO‑ready sites with a CMS that doesn’t get in the way.</h1>
-      <p>FlexileCMS ships clean HTML, first‑class schema markup, and Core Web Vitals you can brag about. No bloat, no lock‑in — just content that flies.</p>
-      <div class="hero-cta">
-        <a href="/docs/get-started" class="btn">Get started</a>
-        <a href="/demo" class="btn outline">Live demo</a>
+      <span class="pill">SEO‑first • Core Web Vitals • Headless‑friendly</span>
+      <h1>Launch SEO‑ready websites that stay <em>fast</em> — without wrestling a theme.</h1>
+      <p class="lead">FlexileCMS ships clean HTML, JSON‑LD, auto‑generated sitemaps, and a content model that maps to any frontend. No bloat, no lock‑in. Just content that flies.</p>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem">
+        <a class="btn primary" href="/docs/get-started">Get started — it’s free</a>
+        <a class="btn" href="/demo">See a live demo</a>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="features-title">
+  <section>
     <div class="container">
-      <h2 id="features-title">Why FlexileCMS</h2>
+      <p class="muted" style="margin:.2rem 0 1rem">Trusted building blocks used across startups & agencies</p>
+      <div class="logos">
+        <div class="logo">Acme Studio</div>
+        <div class="logo">Northwind</div>
+        <div class="logo">PixelPilot</div>
+        <div class="logo">Horizon Labs</div>
+        <div class="logo">Lighthouse</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Built for performance & rankings</h2>
       <div class="grid cards">
-        <article class="card">
-          <h3>SEO‑first architecture</h3>
-          <p class="muted">Clean URLs, canonical tags, Open Graph, and JSON‑LD out of the box.</p>
-          <ul class="list">
-            <li>Auto sitemaps & robots</li>
-            <li>Topical hubs & internal links</li>
-            <li>Image alt & lazy‑loading</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Core Web Vitals wins</h3>
-          <p class="muted">Ship fast pages: great LCP/CLS/INP without wrestling a theme.</p>
-          <ul class="list">
-            <li>Critical CSS & asset hints</li>
-            <li>Optimized images</li>
-            <li>No render‑blocking bloat</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Flexible content model</h3>
-          <p class="muted">Structured content types and fields that map to any frontend.</p>
-          <ul class="list">
-            <li>Headless‑friendly API</li>
-            <li>Markdown & rich text</li>
-            <li>Versioning & drafts</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Secure & portable</h3>
-          <p class="muted">Static export or server mode. Git‑native workflows. Own your content.</p>
-          <ul class="list">
-            <li>Role‑based access</li>
-            <li>Backups & audit log</li>
-            <li>One‑click deploys</li>
-          </ul>
-        </article>
+        <article class="card"><h3>Clean, semantic output</h3><p class="muted">Minimal markup for better crawlability and accessibility. No render‑blocking bloat.</p></article>
+        <article class="card"><h3>Structured by default</h3><p class="muted">Open Graph, canonical tags, and JSON‑LD baked in. Sitemaps & robots auto‑generated.</p></article>
+        <article class="card"><h3>Core Web Vitals wins</h3><p class="muted">LCP/CLS/INP‑friendly defaults: critical CSS, image hints, lazy load, and preconnect.</p></article>
+        <article class="card"><h3>Flexible content</h3><p class="muted">Types & fields that map to any stack — CSR/SSR/SSG. Markdown or rich text.</p></article>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="use-cases">
+  <section>
     <div class="container">
-      <h2 id="use-cases">Built for real teams</h2>
+      <h2>How it works</h2>
+      <div class="grid steps">
+        <div class="card"><div class="step-num">1</div><h3>Create</h3><p class="muted">Define content types (Post, Page, Product) and fields in minutes.</p></div>
+        <div class="card"><div class="step-num">2</div><h3>Publish</h3><p class="muted">Editors write with live preview, drafts, and scheduled publishing.</p></div>
+        <div class="card"><div class="step-num">3</div><h3>Ship</h3><p class="muted">Export static or serve dynamically. Deploy to GitHub Pages, Netlify, Vercel…</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Why teams switch to FlexileCMS</h2>
+      <table class="compare" aria-describedby="compare-desc">
+        <caption id="compare-desc" class="muted" style="text-align:left;padding:.6rem">A quick glance at what you get out of the box.</caption>
+        <thead><tr><th>Capability</th><th>FlexileCMS</th><th>Typical theme stack</th></tr></thead>
+        <tbody>
+          <tr><td>Core Web Vitals</td><td class="yes">Optimized by default</td><td class="no">Requires heavy tuning</td></tr>
+          <tr><td>Structured data</td><td class="yes">Built‑in JSON‑LD</td><td class="no">Plugins required</td></tr>
+          <tr><td>Security</td><td class="yes">Static export option</td><td class="no">Dynamic surface area</td></tr>
+          <tr><td>Portability</td><td class="yes">Headless‑friendly</td><td class="no">Vendor lock‑in</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>What people say</h2>
       <div class="grid cards">
-        <article class="card">
-          <h3>Marketing sites</h3>
-          <p class="muted">Ship landing pages and iterate fast with sections and variants.</p>
-        </article>
-        <article class="card">
-          <h3>Blogs & docs</h3>
-          <p class="muted">Author‑friendly editor, drafts, scheduled publish, and version history.</p>
-        </article>
-        <article class="card">
-          <h3>Headless storefronts</h3>
-          <p class="muted">Feed structured content into any frontend: React, Next, Astro…</p>
-        </article>
+        <blockquote class="card" cite="#"><p>“We replaced a bulky stack and cut our LCP from 3.2s to 1.2s. Rankings followed.”</p><p class="muted">— Mira, Growth Lead</p></blockquote>
+        <blockquote class="card" cite="#"><p>“Editors love the simplicity. Devs love the clean output. Perfect balance.”</p><p class="muted">— Dan, CTO</p></blockquote>
+        <blockquote class="card" cite="#"><p>“Setup to first deploy in an afternoon. Our lighthouse score finally stayed green.”</p><p class="muted">— Keita, Freelancer</p></blockquote>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="utils-title">
+  <section>
     <div class="container">
-      <h2 id="utils-title">Site utilities</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Indexing</h3>
-          <p class="muted">Quick access for search engines.</p>
-          <ul class="list">
-            <li><a href="/sitemap_index.xml">sitemap_index.xml</a></li>
-            <li><a href="/sitemap_pages.xml">sitemap_pages.xml</a></li>
-            <li><a href="/sitemap_blog.xml">sitemap_blog.xml</a></li>
-            <li><a href="/robots.txt">robots.txt</a></li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Resources</h3>
-          <ul class="list">
-            <li><a href="/docs">Documentation</a></li>
-            <li><a href="/blog">Engineering blog</a></li>
-            <li><a href="/contact">Contact sales</a></li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="cta">
+      <div class="card" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+        <div><h2 style="margin:.2rem 0">Ready to ship faster?</h2>
+        <p class="muted" style="margin:0">Start with best‑practice defaults and keep control of your stack.</p></div>
         <div>
-          <h2 style="margin:.2rem 0">Ready to ship faster?</h2>
-          <p class="muted" style="margin:0">Spin up a project in minutes and keep your Core Web Vitals green.</p>
+          <a class="btn primary" href="/docs/get-started">Start now</a>
+          <a class="btn" href="/contact">Talk to sales</a>
         </div>
-        <a class="btn" href="/docs/get-started">Start now</a>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>FAQ</h2>
+      <details><summary>Is it really SEO‑first?</summary><p class="muted">Yes — clean HTML, canonical tags, OG, JSON‑LD, robots, sitemaps, and internal linking patterns come standard.</p></details>
+      <details><summary>Static or dynamic?</summary><p class="muted">Both. Export static for max speed and security, or run server mode when you need it.</p></details>
+      <details><summary>Can we use our existing frontend?</summary><p class="muted">Absolutely. FlexileCMS is headless‑friendly and works with React, Next.js, Astro, vanilla, and more.</p></details>
     </div>
   </section>
 
