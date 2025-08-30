@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Contact — FlexileCMS</title>
+  <meta name="description" content="Contact FlexileCMS."/>
+  <link rel="canonical" href="https://flexilecms.com/"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="icon" href="/assets/favicon.png" type="image/png"/>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+  var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+  j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MQLPR8WC');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    :root{--fg:#0f172a;--muted:#64748b;--bg:#f8fafc;--card:#fff;--line:#e5e7eb;--accent:#0ea5e9}
+    *{box-sizing:border-box}html,body{margin:0}body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    .container{max-width:1140px;margin:auto;padding:1rem}
+    header{position:sticky;top:0;background:#ffffffcc;backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:.6rem 0;gap:.75rem}
+    nav a{color:var(--fg);font-weight:600;margin-left:.9rem}
+    .btn{display:inline-block;background:var(--fg);color:#fff;padding:.7rem 1rem;border-radius:12px;border:1px solid #0001}
+    .btn.outline{background:#fff;color:var(--fg);border:1px solid var(--line)}
+    .hero{background:linear-gradient(180deg,#e0f2fe 0,transparent 65%);padding:3rem 0}
+    .grid{display:grid;gap:1rem}.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1rem}
+    footer{background:#0f172a;color:#cbd5e1;padding:2rem 0;margin-top:2rem}footer a{color:#cbd5e1}
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQLPR8WC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <header>
+    <div class="container nav">
+      <div class="brand">⚡ FlexileCMS</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/features">Features</a>
+        <a href="/pricing">Pricing</a>
+        <a href="/docs">Docs</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact" class="btn outline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section class="hero"><div class="container"><h1>Contact</h1>
+<p class="muted">Send us a note — we’ll get back within 1 business day.</p></div></section>
+<section><div class="container"><form name="contact" method="post" data-netlify="true">
+<p><label>Name<br><input name="name" required></label></p>
+<p><label>Email<br><input name="email" type="email" required></label></p>
+<p><label>Message<br><textarea name="message" rows="6" required></textarea></label></p>
+<p><button class="btn" type="submit">Send</button></p>
+</form></div></section>
+  <footer>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between">
+      <small>© <span id="y"></span> FlexileCMS — All rights reserved.</small>
+      <nav>
+        <a href="/features">Features</a> · <a href="/pricing">Pricing</a> · <a href="/docs">Docs</a> · <a href="/blog">Blog</a> · <a href="/contact">Contact</a> · <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body></html>
